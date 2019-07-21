@@ -106,7 +106,7 @@ $ docker-compose run --rm web bundle
 $ docker-compose run --rm web rails webpacker:install
 ```
 
-6. Editar a configuração host do webpacker no arquivo config/webpacker.yml
+6. Editar a configuração host do webpacker `config/webpacker.yml`
 
 ```
 dev_server:
