@@ -1,0 +1,22 @@
+  [1m[35m (1074.3ms)[0m  [1m[35mCREATE DATABASE "chat_tutorial_development" ENCODING = 'unicode'[0m
+  [1m[35m (792.0ms)[0m  [1m[35mCREATE DATABASE "chat_tutorial_test" ENCODING = 'unicode'[0m
+  [1m[35m (335.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS "chat_tutorial_development"[0m
+  [1m[35m (335.9ms)[0m  [1m[35mDROP DATABASE IF EXISTS "chat_tutorial_test"[0m
+  [1m[35m (806.6ms)[0m  [1m[35mCREATE DATABASE "chat_tutorial_development" ENCODING = 'unicode'[0m
+  [1m[35m (794.1ms)[0m  [1m[35mCREATE DATABASE "chat_tutorial_test" ENCODING = 'unicode'[0m
+  [1m[35m (530.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS "chat_tutorial_development"[0m
+  [1m[35m (335.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "chat_tutorial_test"[0m
+  [1m[35m (906.8ms)[0m  [1m[35mCREATE DATABASE "chat_tutorial_development" ENCODING = 'unicode'[0m
+  [1m[35m (790.9ms)[0m  [1m[35mCREATE DATABASE "chat_tutorial_test" ENCODING = 'unicode'[0m
+  [1m[35m (327.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS "chat_tutorial_development"[0m
+  [1m[35m (326.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS "chat_tutorial_test"[0m
+  [1m[35m (800.5ms)[0m  [1m[35mCREATE DATABASE "chat_tutorial_development" ENCODING = 'unicode'[0m
+  [1m[35m (885.3ms)[0m  [1m[35mCREATE DATABASE "chat_tutorial_test" ENCODING = 'unicode'[0m
+Started GET "/" for 172.22.0.1 at 2019-07-21 17:46:56 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/bundle/gems/railties-6.0.0.rc1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-6.0.0.rc1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 30.8ms | Allocations: 474)
+Completed 200 OK in 54ms (Views: 43.5ms | ActiveRecord: 0.0ms | Allocations: 2698)
+
+

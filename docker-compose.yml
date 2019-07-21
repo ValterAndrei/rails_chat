@@ -1,0 +1,43 @@
+version: '3.6'
+
+volumes:
+  gems-app:
+
+services:
+  web:
+    tty: true
+    stdin_open: true
+    build: .
+    environment:
+      REDIS_URL: 'redis://redis:6379/12'
+      DATABASE_URL: postgres://postgres@db
+    command: bash -c "rm -f tmp/pids/server.pid && bundle exec rails s -p 3000 -b '0.0.0.0'"
+    volumes:
+      - ./:/usr/src/app
+      - gems-app:/usr/local/bundle
+    ports:
+      - '3000:3000'
+    depends_on:
+      - db
+      - redis
+
+  db:
+    image: postgres
+
+  redis:
+    image: redis
+    command: redis-server
+    ports:
+      - '6379:6379'
+
+  sidekiq:
+    build: .
+    environment:
+      REDIS_URL: 'redis://redis:6379/12'
+    command: bundle exec sidekiq -C ./config/sidekiq.yml
+    volumes:
+      - ./:/usr/src/app
+      - gems-app:/usr/local/bundle
+    depends_on:
+      - db
+      - redis
