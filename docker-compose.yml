@@ -11,12 +11,13 @@ services:
     environment:
       REDIS_URL: 'redis://redis:6379/12'
       DATABASE_URL: postgres://postgres@db
-    command: bash -c "rm -f tmp/pids/server.pid && bundle exec rails s -p 3000 -b '0.0.0.0'"
+    command: foreman start -f Procfile.dev
     volumes:
       - ./:/usr/src/app
       - gems-app:/usr/local/bundle
     ports:
       - '3000:3000'
+      - '3035:3035'
     depends_on:
       - db
       - redis
