@@ -1,6 +1,9 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
+  # Add to whitelist the '172.18.0.1' network space in the Web Console config.
+  config.web_console.whitelisted_ips = ['192.168.0.0/16', '172.0.0.0/8']
+
   # In the development environment your application's code is reloaded on
   # every request. This slows down response time but is perfect for development
   # since you don't have to restart the web server when you make code changes.
