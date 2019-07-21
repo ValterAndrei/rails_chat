@@ -230,3 +230,11 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 53ms (Views: 52.7ms | ActiveRecord: 0.0ms | Allocations: 2825)
 
 
+Started GET "/home/index" for 172.22.0.1 at 2019-07-21 18:38:47 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 663)
+Completed 200 OK in 1111ms (Views: 1101.9ms | ActiveRecord: 0.0ms | Allocations: 1346099)
+
+
