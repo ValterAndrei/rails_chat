@@ -2,8 +2,9 @@ import consumer from "./consumer"
 
 $(function () {
   $('[data-channel-subscribe="room"]').each(function (index, element) {
-    var $element = $(element);
-    var room_id = $element.data('room-id');
+    var $element        = $(element);
+    var room_id         = $element.data('room-id');
+    var current_user_id = $element.data('user-id');
     var messageTemplate = $('[data-role="message-template"]');
 
     $element.animate({ scrollTop: $element.prop("scrollHeight") }, 1000)
@@ -23,6 +24,9 @@ $(function () {
           content.find('[data-role="message-date"]').text(date.toLocaleString('pt-br'));
           $element.append(content);
           $element.animate({ scrollTop: $element.prop('scrollHeight') }, 1000);
+
+          if (current_user_id != data.user_id)
+            console.log(data.username, data.message)
         }
       }
     )

@@ -1,13 +1,13 @@
 {
-  "application.js": "/packs/js/application-cff388e761e2e750cde9.js",
-  "application.js.map": "/packs/js/application-cff388e761e2e750cde9.js.map",
+  "application.js": "/packs/js/application-a6e0c21779125cc0dc92.js",
+  "application.js.map": "/packs/js/application-a6e0c21779125cc0dc92.js.map",
   "entrypoints": {
     "application": {
       "js": [
-        "/packs/js/application-cff388e761e2e750cde9.js"
+        "/packs/js/application-a6e0c21779125cc0dc92.js"
       ],
       "js.map": [
-        "/packs/js/application-cff388e761e2e750cde9.js.map"
+        "/packs/js/application-a6e0c21779125cc0dc92.js.map"
       ]
     },
     "hello_react": {
@@ -18,27 +18,37 @@
         "/packs/js/hello_react-c6d73745e0ebf3cc6ffe.js.map"
       ]
     },
-    "src/application": {
+    "room": {
       "js": [
-        "/packs/js/src/application-c6fa297091d43fcc2660.js"
+        "/packs/js/room-e64fa93c4796cac60317.js"
       ],
       "js.map": [
-        "/packs/js/src/application-c6fa297091d43fcc2660.js.map"
+        "/packs/js/room-e64fa93c4796cac60317.js.map"
+      ]
+    },
+    "src/application": {
+      "js": [
+        "/packs/js/src/application-7a94316f1159ad5c2c4d.js"
+      ],
+      "js.map": [
+        "/packs/js/src/application-7a94316f1159ad5c2c4d.js.map"
       ]
     },
     "src/rails-chat-tutorial": {
       "js": [
-        "/packs/js/src/rails-chat-tutorial-be8528863598f4957002.js"
+        "/packs/js/src/rails-chat-tutorial-7601fef56a83677fd07c.js"
       ],
       "js.map": [
-        "/packs/js/src/rails-chat-tutorial-be8528863598f4957002.js.map"
+        "/packs/js/src/rails-chat-tutorial-7601fef56a83677fd07c.js.map"
       ]
     }
   },
   "hello_react.js": "/packs/js/hello_react-c6d73745e0ebf3cc6ffe.js",
   "hello_react.js.map": "/packs/js/hello_react-c6d73745e0ebf3cc6ffe.js.map",
-  "src/application.js": "/packs/js/src/application-c6fa297091d43fcc2660.js",
-  "src/application.js.map": "/packs/js/src/application-c6fa297091d43fcc2660.js.map",
-  "src/rails-chat-tutorial.js": "/packs/js/src/rails-chat-tutorial-be8528863598f4957002.js",
-  "src/rails-chat-tutorial.js.map": "/packs/js/src/rails-chat-tutorial-be8528863598f4957002.js.map"
+  "room.js": "/packs/js/room-e64fa93c4796cac60317.js",
+  "room.js.map": "/packs/js/room-e64fa93c4796cac60317.js.map",
+  "src/application.js": "/packs/js/src/application-7a94316f1159ad5c2c4d.js",
+  "src/application.js.map": "/packs/js/src/application-7a94316f1159ad5c2c4d.js.map",
+  "src/rails-chat-tutorial.js": "/packs/js/src/rails-chat-tutorial-7601fef56a83677fd07c.js",
+  "src/rails-chat-tutorial.js.map": "/packs/js/src/rails-chat-tutorial-7601fef56a83677fd07c.js.map"
 }
