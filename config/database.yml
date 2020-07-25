@@ -1,16 +1,21 @@
-development: &default
+default: &default
   adapter: postgresql
-  database: chat_tutorial_development
   encoding: unicode
   username: postgres
-  password:
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  url: <%= ENV['DATABASE_URL'] %>
+
+development:
+  <<: *default
+  host: <%= ENV['DB_HOST'] %>
+  database: app_development
 
 test:
   <<: *default
-  database: chat_tutorial_test
+  host: <%= ENV['DB_HOST'] %>
+  database: app_test
 
 production:
   <<: *default
-  database: chat_tutorial_production
+  database: app_production
+  username: app
+  password: <%= ENV['APP_DATABASE_PASSWORD'] %>
