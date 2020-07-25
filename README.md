@@ -18,6 +18,10 @@ rails db:setup
 ```
 
 4. Run project
->[localhost:3000](localhost:3000)
+```
+docker-compose up web
+```
+
+[localhost:3000](localhost:3000)
 
 [Reference](https://iridakos.com/tutorials/2019/04/04/creating-chat-application-rails-websockets.html)
